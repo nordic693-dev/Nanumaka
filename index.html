@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Nanumaka</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background:#000000;
+  color:white;
+  text-align:center;
+}
+
+/* CONTAINER */
+.container {
+  max-width:400px;
+  margin:fullwidth auto;
+  padding:40px 20px;
+}
+
+/* FOTO */
+.profile img {
+  width:100px;
+  border-radius:50%;
+  margin-bottom:15px;
+
+  animation: fadeIn 1s ease;
+}
+
+/* ANIMASI MUNCUL */
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(-20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+/* LINK */
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 320px;
+  width: 90%;
+  margin: 12px auto;
+  padding: 15px;
+
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+  transition: 0.3s;
+}
+
+/* ICON */
+.icon {
+  position: absolute;
+  left: 15px;
+  width: 22px;
+}
+
+/* WARNA BRAND */
+.shopee {
+  background:  #ffffff;
+}
+
+.tiktok {
+  background:  #ffffff;
+}
+
+.instagram {
+  background:  #ffffff;
+}
+
+.wa {
+  background: #ffffff;
+}
+
+/* HOVER */
+.link:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* ICON DI KIRI */
+.icon {
+  position: absolute;
+  left: 15px;
+  width: 22px;
+}
+
+/* ICON */
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* HOVER ANIMASI */
+.link:hover {
+  transform: scale(1.05);
+  background:#ddd;
+}
+
+/* HERO BACKGROUND */
+/* HERO TEXT STYLE */
+.hero {
+  height: 250px;
+  background: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* JUDUL BESAR */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+.hero h1 {
+  font-size: 40px;      /* sebelumnya 60–70 */
+  letter-spacing: 3px;  /* rapetin biar nggak terlalu melebar */
+  margin: 0;
+}
+
+/* SUB TEXT */
+.hero p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- FOTO BESAR -->
+<div class="hero">
+  <h1>NANUMAKA</h1>
+  <p>STAY CONSCIOUS</p>
+</div>
+
+  <!-- LINK -->
+  
+<a class="link shopee" href="https://shopee.co.id/username">
+  <img src="23.png" class="icon">
+  <span>Shopee</span>
+</a>
+
+<a class="link tiktok" href="https://www.tiktok.com/@username">
+  <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" class="icon">
+  <span>TikTok Shop</span>
+</a>
+
+<a class="link instagram" href="https://instagram.com/username">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+  <span>Instagram</span>
+</a>
+
+<a class="link wa" href="https://wa.me/6281234567890">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="icon">
+  <span>Chat WhatsApp</span>
+</a>
+</div>
+
+</body>
+</html>
